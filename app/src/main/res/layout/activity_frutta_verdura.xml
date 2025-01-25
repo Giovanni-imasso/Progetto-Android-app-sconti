@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".categories.FruttaVerduraActivity">
+
+    <Button
+        android:id="@+id/btn_fruttaverdura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Frutta e verdura"
+        android:backgroundTint="@color/deep_blue"
+        app:layout_constraintTop_toBottomOf="@id/browseCategoriesText" />
+
+    <Button
+        android:id="@+id/btn_banco_frigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Banco frigo"
+        android:backgroundTint="@color/deep_blue"
+        app:layout_constraintTop_toBottomOf="@id/browseCategoriesText"
+        app:layout_constraintStart_toEndOf="@id/btn_fruttaverdura"/>
+
+    <Button
+        android:id="@+id/btn_prodotti_da_forno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/deep_blue"
+        android:text="Prodotti da forno"
+        app:layout_constraintTop_toBottomOf="@id/browseCategoriesText"
+        app:layout_constraintStart_toEndOf="@id/btn_banco_frigo"/>
+
+    <Button
+        android:id="@+id/btn_prodotti_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/deep_blue"
+        android:text="Prodotti Bio"
+        app:layout_constraintTop_toBottomOf="@id/btn_fruttaverdura" />
+
+    <Button
+        android:id="@+id/btn_prodotti_per_la_casa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/deep_blue"
+        android:text="casalinghi"
+        app:layout_constraintTop_toBottomOf="@id/btn_banco_frigo"
+        app:layout_constraintStart_toEndOf="@id/btn_prodotti_bio"/>
+    <Button
+        android:id="@+id/btn_abbigliamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/deep_blue"
+        android:text="abbigliamento"
+        app:layout_constraintTop_toBottomOf="@id/btn_prodotti_da_forno"
+        app:layout_constraintStart_toEndOf="@id/btn_prodotti_per_la_casa"/>
+
+    <TextView
+        android:id="@+id/browseCategoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sfoglia le categorie"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_prodotti_bio" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

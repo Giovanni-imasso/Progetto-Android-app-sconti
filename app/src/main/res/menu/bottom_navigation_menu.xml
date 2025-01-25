@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/ic_orders"
+        android:title="Ordini"/>
+
+    <item
+        android:id="@+id/navigation_fidelity"
+        android:icon="@drawable/ic_fidelity"
+        android:title="Card"/>
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Carrello"/>
+</menu>

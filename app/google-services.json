@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "877364503827",
+    "project_id": "fresh-food-a4dea",
+    "storage_bucket": "fresh-food-a4dea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877364503827:android:851ecfaaab68a79763e6e6",
+        "android_client_info": {
+          "package_name": "com.itsmad.freshfoodproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKhf9MyFbC3Xjs-gXxTHJypYkwEw34k4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
